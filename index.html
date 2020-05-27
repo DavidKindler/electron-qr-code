@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <title></title>
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <input type="text" name="qrcode" id="qr-code" /><button id="clear">
+    Enter
+  </button>
+  <hr />
+  <div id="scanned"></div>
+  <div id="oktogo"></div>
+  <div id="logger"></div>
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+
+</html>

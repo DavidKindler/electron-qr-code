@@ -1,0 +1,19 @@
+{
+  "name": "covid-qr-code-reader",
+  "version": "1.1.4",
+  "description": "COVID QR Code reader",
+  "main": "main.js",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "build": "npm version patch && electron-packager . covid  --platform=win32  --overwrite"
+  },
+  "author": "DavidKindler",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-packager": "^14.2.1"
+  },
+  "dependencies": {
+    "moment": "^2.26.0"
+  }
+}
